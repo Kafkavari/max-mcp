@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <!-- max-mcp listener start/stop: power symbol (the macro is a checkbutton, Max highlights it while running) -->
+  <path d="M7.2 6.6a7.5 7.5 0 1 0 9.6 0" stroke="#26a69a" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+  <path d="M12 3.5v8" stroke="#26a69a" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

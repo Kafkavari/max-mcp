@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <!-- max-mcp settings: AI client (circle) bridged to the 3ds Max scene (box) -->
+  <path d="M10 12h3.5" stroke="#26a69a" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+  <circle cx="6" cy="12" r="4" fill="none" stroke="#26a69a" stroke-width="2.6"/>
+  <rect x="13" y="4" width="9.5" height="16" rx="2" fill="#26a69a"/>
+  <path d="M15.6 9h4.3M15.6 12h4.3M15.6 15h4.3" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

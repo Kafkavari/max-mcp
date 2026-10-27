@@ -43,8 +43,9 @@ pip install .            # or pip install -e .   (editable)
 # without installing:    uvx --from . max-mcp
 ```
 
-Nothing is installed into 3ds Max; the listener only needs its folder on
-`sys.path`, which the start script does by itself.
+No installer: the listener only needs its folder on `sys.path`, which the
+start script does by itself (it also drops the two action icons into Max's
+`usericons` folder, see below).
 
 ### 1. Load it inside 3ds Max
 
@@ -53,6 +54,14 @@ MAXScript Listener prints `[MaxMcp] dinleniyor 127.0.0.1:30025` and the window
 is available as macroScript **MaxMcp Settings** (category `max-mcp`, add it to
 any menu/toolbar/quad via *Customize > Customize User Interface*), or with
 `python.Execute "import max_mcp_ui; max_mcp_ui.show()"`.
+
+Both actions, **MaxMcp Settings** and **MaxMcp Start/Stop** (a check button that
+stays highlighted while the listener runs), come with SVG icons, so they can go
+on the ribbon too: right-click the ribbon > *Customize Ribbon*, pick category
+`max-mcp` in the action list and drag them onto a panel. The icons live in
+`max_side/icons/MaxMcp/`; the macro file copies them to Max's per-user
+`usericons\MaxMcp` folder when they are missing or changed. That folder is the
+only thing written outside the repo besides the optional startup loader.
 
 To load it automatically at startup, press **Install loader** in the window
 (writes a one-line `max_mcp_loader.ms` into Max's per-user startup folder;
